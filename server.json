@@ -1,47 +1,24 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "life.aiware/memware",
-  "description": "Cross-agent long-term memory & task handoff across Claude Code, Codex, Cursor, and mobile MCP apps.",
-  "status": "active",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.HackSing/memware",
+  "title": "Memware — Cross-Agent Long-Term Memory",
+  "description": "Shared long-term memory & Stop-hook task handoff across Claude Code, Codex, Cursor, and mobile.",
+  "websiteUrl": "https://aiware.life",
+  "version": "0.2.1",
   "repository": {
     "url": "https://github.com/HackSing/memware-mcp",
     "source": "github"
   },
-  "version_detail": {
-    "version": "0.2.0"
-  },
-  "packages": [
-    {
-      "registry_name": "npm",
-      "name": "memware",
-      "version": "0.2.0",
-      "runtime": "node",
-      "environment_variables": [
-        {
-          "name": "MEMWARE_API_KEY",
-          "description": "OpenAI-compatible API key for local BYOK extraction and embeddings.",
-          "is_required": false,
-          "is_secret": true
-        },
-        {
-          "name": "MEMWARE_AGENT_ID",
-          "description": "Agent provenance tag (e.g. claude-code, codex, cursor, antigravity).",
-          "is_required": false,
-          "is_secret": false
-        }
-      ]
-    }
-  ],
   "remotes": [
     {
-      "transport_type": "streamable-http",
+      "type": "streamable-http",
       "url": "https://mcp.aiware.life/mcp",
       "headers": [
         {
           "name": "Authorization",
           "description": "Bearer mw_live_... token issued at https://aiware.life/app",
-          "is_required": true,
-          "is_secret": true
+          "isRequired": true,
+          "isSecret": true
         }
       ]
     }
