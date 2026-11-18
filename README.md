@@ -122,7 +122,7 @@ Both `https://mcp.aiware.life/mcp` and `npx -y memware@latest serve` expose the 
 | `memory_remember` | Explicitly set or overwrite a durable user preference (`field` -> `value`). |
 | `memory_threads` | List active unfinished work threads with last-agent provenance and next steps. |
 | `memory_process` | Distill and deduplicate durable facts & thread state from a conversation turn. |
-| `memory_search` | Hybrid dense-vector (`BGE-M3` / BYOK) + lexical search across stored memories. |
+| `memory_search` | Hybrid dense-vector + lexical search across stored memories. |
 | `memory_list` | Paginate stored memory records newest-first. |
 | `memory_update` | Edit an existing memory fact, category, or importance score in place. |
 | `memory_delete` | Soft-delete (tombstone) a specific memory record and remove its vectors. |
@@ -137,7 +137,7 @@ Both `https://mcp.aiware.life/mcp` and `npx -y memware@latest serve` expose the 
 | Feature | Memware Cloud (`aiware.life`) | Memware Local (`npx memware`) |
 | --- | --- | --- |
 | **Setup** | Zero LLM keys · 1 URL (`mcp.aiware.life/mcp`) | Local single-file binary + BYOK |
-| **Storage** | Isolated Cloudflare D1 + Workers AI (`BGE-M3`) | `~/.memware` local SQLite + vectors |
+| **Storage** | Isolated Edge Vault + Multilingual Vector Index | `~/.memware` local SQLite + vectors |
 | **Multi-Device & Mobile** | Yes (Claude iOS/Android, ChatGPT App, Desktop) | Single machine |
 | **Visual Web Console** | Yes (`aiware.life/app/memories`) | Local CLI / HTTP loopback |
 | **Pricing** | Free Starter · Pro `$12/mo` (`$99/yr`) · Max `$29/mo` | Free up to 200 memories · `$49` Founding Lifetime |
