@@ -1,0 +1,31 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - memwareApiKey
+    properties:
+      memwareApiKey:
+        type: string
+        description: OpenAI-compatible API key for local extraction & embeddings (or use `memware login` for zero-key Cloud mode).
+      memwareBaseUrl:
+        type: string
+        description: Optional OpenAI-compatible endpoint URL.
+      memwareModel:
+        type: string
+        description: Optional chat/extraction model identifier.
+      memwareAgentId:
+        type: string
+        default: claude-code
+        description: Provenance identifier stamped on written memories (e.g. claude-code, codex, cursor).
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'memware@latest', 'serve'],
+      env: {
+        MEMWARE_API_KEY: config.memwareApiKey,
+        ...(config.memwareBaseUrl ? { MEMWARE_BASE_URL: config.memwareBaseUrl } : {}),
+        ...(config.memwareModel ? { MEMWARE_MODEL: config.memwareModel } : {}),
+        ...(config.memwareAgentId ? { MEMWARE_AGENT_ID: config.memwareAgentId } : {})
+      }
+    })

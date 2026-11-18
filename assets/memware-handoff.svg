@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="920" height="320" fill="none">
+  <rect width="920" height="320" rx="20" fill="#FAF8F5"/>
+  <rect x="1" y="1" width="918" height="318" rx="19" stroke="#E6E1D8" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="40" y="46" fill="#141413" font-family="Georgia, serif" font-size="22" font-weight="600">One Memory. Every Agent. Always Knows You.</text>
+  <text x="40" y="70" fill="#6E6A63" font-family="system-ui, -apple-system, sans-serif" font-size="13">Automatic Stop-hook turn capture  ·  14 MCP tools  ·  Cross-agent task handoff (memory_resume)</text>
+  <rect x="760" y="28" width="120" height="28" rx="14" fill="#F2ECE4" stroke="#DFD7CB"/>
+  <circle cx="778" cy="42" r="4.5" fill="#2E7D5B">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="790" y="46" fill="#141413" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11.5" font-weight="600">aiware.life</text>
+
+  <!-- Connector Paths -->
+  <path id="capturePath" d="M 276 185 L 348 185" stroke="#D5CEC2" stroke-width="2" stroke-dasharray="5 5"/>
+  <path id="recallPathTop" d="M 572 162 C 608 162, 608 138, 644 138" stroke="#D5CEC2" stroke-width="2" stroke-dasharray="5 5"/>
+  <path id="recallPathBot" d="M 572 208 C 608 208, 608 232, 644 232" stroke="#D5CEC2" stroke-width="2" stroke-dasharray="5 5"/>
+
+  <!-- Animated Pulse Dots -->
+  <circle r="5" fill="#C6613F">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M 276 185 L 348 185"/>
+  </circle>
+  <circle r="5" fill="#2E7D5B">
+    <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M 572 162 C 608 162, 608 138, 644 138"/>
+  </circle>
+  <circle r="5" fill="#2E7D5B">
+    <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M 572 208 C 608 208, 608 232, 644 232"/>
+  </circle>
+
+  <!-- Left Card: Claude Code -->
+  <rect x="40" y="106" width="236" height="166" rx="14" fill="#FFFFFF" stroke="#E4DED4" stroke-width="1.5"/>
+  <rect x="56" y="122" width="98" height="22" rx="6" fill="#FBF1EC"/>
+  <text x="66" y="137" fill="#C6613F" font-family="ui-monospace, monospace" font-size="11" font-weight="600">1. Stop Hook</text>
+  <text x="56" y="166" fill="#141413" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Claude Code</text>
+  <text x="56" y="188" fill="#57534E" font-family="system-ui, sans-serif" font-size="12">"Use Drizzle + D1 and never</text>
+  <text x="56" y="205" fill="#57534E" font-family="system-ui, sans-serif" font-size="12">expose source in buyouts."</text>
+  <rect x="56" y="224" width="204" height="30" rx="8" fill="#FAF8F5" stroke="#ECE6DC"/>
+  <text x="68" y="243" fill="#6E6A63" font-family="ui-monospace, monospace" font-size="11">npx memware hook → captured</text>
+
+  <!-- Center Vault: Memware -->
+  <rect x="348" y="98" width="224" height="182" rx="16" fill="#141413"/>
+  <text x="370" y="128" fill="#E7A288" font-family="ui-monospace, monospace" font-size="11" font-weight="600">SHARED MEMORY VAULT</text>
+  <text x="370" y="152" fill="#FAF8F5" font-family="Georgia, serif" font-size="18" font-weight="600">Memware Engine</text>
+  <rect x="368" y="168" width="184" height="28" rx="7" fill="#232220"/>
+  <text x="380" y="186" fill="#E5E0D8" font-family="ui-monospace, monospace" font-size="11">• Profile &amp; Preferences</text>
+  <rect x="368" y="202" width="184" height="28" rx="7" fill="#232220"/>
+  <text x="380" y="220" fill="#E5E0D8" font-family="ui-monospace, monospace" font-size="11">• Active Task Threads</text>
+  <rect x="368" y="236" width="184" height="28" rx="7" fill="#232220"/>
+  <text x="380" y="254" fill="#9CA3AF" font-family="ui-monospace, monospace" font-size="10.5">Cloud Edge D1  |  Local SQLite</text>
+
+  <!-- Right Top Card: Codex / Cursor -->
+  <rect x="644" y="98" width="236" height="80" rx="14" fill="#FFFFFF" stroke="#E4DED4" stroke-width="1.5"/>
+  <text x="662" y="123" fill="#2E7D5B" font-family="ui-monospace, monospace" font-size="11" font-weight="600">2. memory_resume</text>
+  <text x="662" y="144" fill="#141413" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Codex  ·  Cursor  ·  Antigravity</text>
+  <text x="662" y="163" fill="#57534E" font-family="system-ui, sans-serif" font-size="11.5">Picks up exact thread &amp; stack rules</text>
+
+  <!-- Right Bottom Card: Mobile Claude & ChatGPT -->
+  <rect x="644" y="192" width="236" height="80" rx="14" fill="#FFFFFF" stroke="#E4DED4" stroke-width="1.5"/>
+  <text x="662" y="217" fill="#C6613F" font-family="ui-monospace, monospace" font-size="11" font-weight="600">3. Remote MCP (HTTPS)</text>
+  <text x="662" y="238" fill="#141413" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Claude Mobile &amp; ChatGPT App</text>
+  <text x="662" y="257" fill="#57534E" font-family="ui-monospace, monospace" font-size="11">mcp.aiware.life/mcp</text>
+</svg>
