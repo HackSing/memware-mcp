@@ -1,0 +1,33 @@
+name: Feature Request
+description: Propose an agent integration, workflow improvement, or new capability
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Workflow Gap
+      description: What are you trying to accomplish across your agents?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired Outcome
+      description: What would a great solution look like for you?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Agent Adapter / Stop Hook (Claude Code, Codex, Cursor, Antigravity, etc.)
+        - Remote MCP & Cloud Sync
+        - Memory Dashboard & Profile Controls
+        - On-the-go Personal Agent Chat
+        - Local CLI & BYOK
+        - Other
+    validations:
+      required: true

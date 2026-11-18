@@ -1,0 +1,53 @@
+name: Bug Report
+description: Report a reproducible problem with Memware CLI, Remote MCP, or agent hooks
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue. **Remove all API keys, license keys, personal memories, and raw transcripts before submitting.**
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Product Surface
+      options:
+        - Memware Cloud / Remote MCP (aiware.life)
+        - Memware Local CLI — serve (MCP stdio)
+        - Memware Local CLI — hook (Stop Hook)
+        - Web Dashboard / Billing
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version & Platform
+      placeholder: e.g. memware 0.2.0, macOS 15 arm64, Claude Code 1.x
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Configure ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior & Redacted Logs
+      render: shell
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety Check
+      options:
+        - label: I redacted all secrets, license keys, and personal memory content.
+          required: true

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Official Website & Cloud Console
+    url: https://aiware.life
+    about: Visit aiware.life for Memware Cloud, Remote MCP, and Local Lifetime licenses
+  - name: Community Q&A & Use Cases
+    url: https://github.com/HackSing/memware-mcp/discussions
+    about: Ask questions, share workflows, and showcase cross-agent setups
+  - name: Private Security Advisory
+    url: https://github.com/HackSing/memware-mcp/security/advisories/new
+    about: Report security issues privately (never post secrets or personal memory data publicly)
